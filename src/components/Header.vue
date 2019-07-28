@@ -48,6 +48,12 @@ export default {
       span {
         display: block;
       }
+
+      &:hover {
+        background-color: #E3FDFD;
+        color: #252A34;
+        cursor: pointer;
+      }
     }
   }
 </style>
