@@ -25,7 +25,6 @@ font-family: 'Scada', sans-serif; */
 
 * {
   box-sizing: border-box;
-  border: 1px dashed black;
 }
 
 body {

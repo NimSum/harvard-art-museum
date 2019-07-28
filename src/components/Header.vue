@@ -22,13 +22,32 @@ export default {
   header {
     display: flex;
     justify-content: space-between;
+    background: #252A34;
+    color: #E3FDFD;
   }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rufina', serif;
+    margin: 0 10px;
+  }
+
   ul {
     display: flex;
+    margin: 0;
     li {
       list-style-type: none;
-      font-size: 1.5rem;
-      padding: 0 10px;
+      font-size: 1.2rem;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Scada', sans-serif;
+      
+      span {
+        display: block;
+      }
     }
   }
 </style>
