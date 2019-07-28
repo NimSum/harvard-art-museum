@@ -1,7 +1,7 @@
-import HelloWorld from '../components/HelloWorld.vue';
+import ArtworkContainer from '../components/ArtworkContainer.vue';
 
 const routes = [
-  { path: '/hello', component: HelloWorld }
+  { path: '/', component: ArtworkContainer }
 ];
 
 export default routes;

@@ -18,12 +18,28 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Rufina:700|Scada&display=swap');
+
+/* font-family: 'Rufina', serif;
+font-family: 'Scada', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  border: 1px dashed black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
 }
 </style>
