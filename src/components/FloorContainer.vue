@@ -20,20 +20,30 @@ export default {
       currFloor: this.$route.params.floor_number
     }
   },
-  async created() {
-    try {
-      const currFloorUrl = apiUrls.galleriesByFloor(1);
-      const data = await getAnything(currFloorUrl);
-    } catch(error) {
-      console.log(error); 
-    }
+  created() {
+    this.getGalleries();
+  },
+  updated() {
+    this.getGalleries();
   },
   watch:{
     $route (to, from){
       const { floor_number } = to.params;
       this.currFloor = floor_number;
     }
-  } 
+  },
+  methods: {
+    async getGalleries() {
+      console.log('hi')
+      try {
+        const currFloorUrl = apiUrls.galleriesByFloor(this.currFloor);
+        const data = await getAnything(currFloorUrl);
+        this.galleries = data.records;
+      } catch(error) {
+        console.log(error); 
+      }
+    }
+  }
 }
 </script>
 
