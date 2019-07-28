@@ -1,7 +1,9 @@
+import FloorContainer from '../components/FloorContainer.vue';
 import ArtworkContainer from '../components/ArtworkContainer.vue';
 
 const routes = [
-  { path: '/', component: ArtworkContainer }
+  { path: '/floor/:floor_number', component: FloorContainer },
+  { path: '/', component: ArtworkContainer },
 ];
 
 export default routes;
