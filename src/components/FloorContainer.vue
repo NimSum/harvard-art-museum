@@ -6,6 +6,8 @@
 
 <script>
 import GalleriesBar from './GalleriesBar';
+import getAnything from '../utils/apiFetches';
+import apiUrls from '../utils/apiUrlGenerator';
 
 export default {
   name: 'FloorContainer',
@@ -20,8 +22,8 @@ export default {
   },
   async created() {
     try {
-      const apiKey = process.env.VUE_APP_API_KEY;
-      
+      const currFloorUrl = apiUrls.galleriesByFloor(1);
+      const data = await getAnything(currFloorUrl);
     } catch(error) {
       console.log(error); 
     }
