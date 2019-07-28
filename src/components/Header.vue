@@ -2,12 +2,36 @@
   <header>
     <h1><span>Harvard Art</span>Musem Explorer</h1>
     <ul>
-      <li>Home</li>
-      <li>Floor<span>1</span></li>
-      <li>Floor<span>2</span></li>
-      <li>Floor<span>3</span></li>
-      <li>Floor<span>4</span></li>
-      <li>Floor<span>5</span></li>
+      <li>
+        <router-link to="/">
+            Home
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/floor/1">
+           Floor<span>1</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/floor/2">
+          Floor<span>2</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/floor/3">
+          Floor<span>3</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/floor/4">
+          Floor<span>4</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/floor/5">
+          Floor<span>5</span>
+        </router-link>
+      </li>
     </ul>
   </header>
 </template>
@@ -36,22 +60,33 @@ export default {
   ul {
     display: flex;
     margin: 0;
+
     li {
       list-style-type: none;
       font-size: 1.2rem;
-      padding: 0 20px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
       font-family: 'Scada', sans-serif;
       
       span {
         display: block;
       }
 
+      a {
+        color: #E3FDFD;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 20px;
+
+        &:hover {
+          color: #252A34;
+          cursor: pointer;
+        }
+      }
+
       &:hover {
         background-color: #E3FDFD;
-        color: #252A34;
         cursor: pointer;
       }
     }
