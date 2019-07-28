@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <h1>Harvard Art Museum Explorer</h1>
+    <Header />
+    <h1>hi</h1>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Header from './components/Header';
 
 export default {
   name: 'app',
   components: {
-  }
+    Header
+  },
 }
 </script>
 
