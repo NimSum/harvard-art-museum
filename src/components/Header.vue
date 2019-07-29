@@ -86,6 +86,11 @@ export default {
         }
       }
 
+      .router-link-exact-active {
+        background-color: #E3FDFD;
+        color: #252A34;
+      }
+
       &:hover {
         background-color: #E3FDFD;
         cursor: pointer;
