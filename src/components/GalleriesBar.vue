@@ -1,9 +1,13 @@
 <template>
   <aside>
     <nav>
-      <h2>Galleries : Floor {{ floor }}</h2>
+      <h2>Galleries : Floor {{ $route.params.floor_number }}</h2>
       <ul>
-        <li v-for="gallery in galleries" v-bind:key="gallery.galleryid">
+        <li 
+          v-for="gallery in galleries" 
+          v-bind:key="gallery.galleryid"
+          @click="$emit('get-art', gallery.galleryid)"
+        >
           {{ gallery.theme || gallery.name }}
         </li>
       </ul>
@@ -14,7 +18,7 @@
 <script>
 export default {
   name: 'GalleriesBar',
-  props: ['galleries', 'floor']
+  props: ['galleries']
 }
 </script>
 
