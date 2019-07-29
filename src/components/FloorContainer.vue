@@ -30,7 +30,9 @@ export default {
   },
   created() {
     const { floor_number } = this.$route.params
-    this.getGalleries(floor_number);
+    this.getGalleries(floor_number).then(res => {
+      if (res) this.generateInitialGallery();
+    });
   },
   watch: {
     $route (to, from){
@@ -47,6 +49,7 @@ export default {
         const currFloorUrl = apiUrls.galleriesByFloor(floor_number);
         const data = await getAnything(currFloorUrl);
         this.galleries = data.records;
+        return true;
       } catch(error) {
         throw error;
       }
@@ -59,6 +62,12 @@ export default {
       } catch(error) {
         throw error;
       }
+    },
+    generateInitialGallery() {
+      const randomGalleryId = Math.floor(Math.random() * (this.galleries.length - 1 - 0 + 1)) + 0;
+      const selectedGaller = this.galleries[randomGalleryId];
+      
+      console.log(selectedGaller.galleryid)
     }
   }
 }
