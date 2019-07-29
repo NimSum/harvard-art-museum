@@ -31,6 +31,7 @@ export default {
       h2 {
         margin: 0;
         padding: 15px 0;
+        color: #FF2E63;
       }
 
       ul {
