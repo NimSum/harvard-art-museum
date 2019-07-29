@@ -1,6 +1,12 @@
 <template>
   <article class="ArtworkItem">
-    <h2>Work</h2>
+    <div>
+      image goes here
+    </div>
+    <div>
+      <h4>{{ this.data.title }}</h4>
+      <p>{{ this.data.labeltext }}</p>
+    </div>
   </article>
 </template>
 
@@ -10,16 +16,31 @@ export default {
   props: ['artwork'],
   data() {
     return {
-      images: []
+      people: {},
+      colors: [],
+      dated: '',
+      primaryimageurl: '',
+      labeltext: '',
+      url: ''
     }
   },
   created() {
-    const { people, colors, dated, labeltext, primaryimageurl, url } = this.$props.artwork;
+    const { people, colors, dated, labeltext, primaryimageurl, url, title } = this.$props.artwork;
+    this.data = {
+      people,
+      colors,
+      dated,
+      labeltext,
+      primaryimageurl,
+      url
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
+  .ArtworkItem {
+    width: 50%;
+  }
 </style>
 

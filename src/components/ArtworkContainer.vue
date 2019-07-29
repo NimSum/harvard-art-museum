@@ -1,11 +1,10 @@
 <template>
-  <section class="ArtworkContainer">
-    <div
-      v-for="artwork in artworks"
-      v-bind:key="artwork.objectid"
-    > 
-      <ArtworkItem v-bind:artwork="artwork" />
-    </div>
+  <section class="ArtworkContainer"> 
+      <ArtworkItem 
+        v-for="artwork in artworks"
+        v-bind:key="artwork.objectid"
+        v-bind:artwork="artwork" 
+      />
   </section>
 </template>
 
@@ -25,6 +24,9 @@ export default {
   .ArtworkContainer {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    padding: 1%;
   }
 
 </style>
