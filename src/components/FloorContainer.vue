@@ -38,9 +38,11 @@ export default {
     $route (to, from){
       const { floor_number } = to.params;
       const { floor_number: old_floor } = from.params;
-      this.getGalleries(floor_number).then(res => {
-        if (res) this.generateInitialGallery();
-      });
+      if (floor_number !== old_floor) {
+        this.getGalleries(floor_number).then(res => {
+          if (res) this.generateInitialGallery();
+        });
+      }
     }
   },
   methods: {

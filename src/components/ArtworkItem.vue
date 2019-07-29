@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="ArtworkItem">
     <h2>Work</h2>
   </article>
 </template>
@@ -15,11 +15,11 @@ export default {
   },
   created() {
     const { people, colors, dated, labeltext, primaryimageurl, url } = this.$props.artwork;
-    console.log(dated)
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
+

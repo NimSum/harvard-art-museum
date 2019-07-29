@@ -24,6 +24,7 @@ export default {
 <style lang="scss" scoped>
   .ArtworkContainer {
     width: 80%;
+    display: flex;
   }
 
 </style>
