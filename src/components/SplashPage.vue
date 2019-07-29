@@ -24,7 +24,7 @@ export default {
       url: record.baseimageurl,
       id: record.imageid
     }));
-    this.$data.images = images;
+    this.$data.images = [...this.$data.images, ...images];
     this.$data.next = result.info.next;
   }
 }
@@ -35,13 +35,21 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 1% 0;
+    background: #08d9d6;
+    height: 100%;
+    overflow: scroll;
 
     img {
       display: inline-block;
-      width: 28%;
-      margin: auto;
-      padding: 20px 0;
+      width: 27%;
+      margin: 2%;
+      transition: all 500ms ease-in-out;
+
+      &:hover {
+        width: 33%;
+      }
     }
     
   }
