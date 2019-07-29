@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1><span>Harvard Art</span>Musem Explorer</h1>
+    <router-link to="/">
+      <h1><span>Harvard Art</span>Musem Explorer</h1>
+    </router-link>    
     <ul>
       <li>
         <router-link to="/">
@@ -27,11 +29,6 @@
           Floor<span>4</span>
         </router-link>
       </li>
-      <li>
-        <router-link to="/floor/5">
-          Floor<span>5</span>
-        </router-link>
-      </li>
     </ul>
   </header>
 </template>
@@ -47,7 +44,10 @@ export default {
     display: flex;
     justify-content: space-between;
     background: #252A34;
-    color: #E3FDFD;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   h1 {
@@ -56,6 +56,8 @@ export default {
     font-family: 'Rufina', serif;
     font-size: 1.5rem;
     margin: 5px 10px;
+    color: #E3FDFD;
+    text-decoration: none;
   }
 
   ul {
@@ -73,7 +75,6 @@ export default {
 
       a {
         color: #E3FDFD;
-        text-decoration: none;
         display: flex;
         justify-content: center;
         flex-direction: column;

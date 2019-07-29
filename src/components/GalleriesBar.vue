@@ -27,7 +27,7 @@ export default {
       width: 22%;
       background-color: #E3FDFD;
       height: 100%;
-
+      overflow: scroll;  
       h2 {
         margin: 0;
         padding: 15px 0;
