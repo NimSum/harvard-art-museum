@@ -60,7 +60,8 @@ export default {
       try {
         const currGalleryUrl = apiUrls.getGalleryObjects(galleryId);
         const data = await getAnything(currGalleryUrl);
-        this.galleryObjects = data.records;
+        const cleaned = this.filterWithImages(data.records);
+        this.galleryObjects = cleaned;
       } catch(error) {
         throw error;
       }
@@ -69,6 +70,9 @@ export default {
       const randomGalleryId = Math.floor(Math.random() * (this.galleries.length - 1 - 0 + 1)) + 0;
       const selectedGallery = this.galleries[randomGalleryId].galleryid;
       this.getArtObjects(selectedGallery);
+    },
+    filterWithImages(items) {
+      return items.filter(item => item.imagecount > 0 && item.primaryimageurl !== null);
     }
   }
 }
