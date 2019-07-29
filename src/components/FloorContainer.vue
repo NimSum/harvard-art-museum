@@ -25,26 +25,26 @@ export default {
   data() {
     return {
       galleries: [],
-      galleryObjects: [],
-      currFloor: this.$route.params.floor_number
+      galleryObjects: []
     }
   },
   created() {
-    this.getGalleries();
+    const { floor_number } = this.$route.params
+    this.getGalleries(floor_number);
   },
-  updated() {
-    this.getGalleries();
-  },
-  watch:{
-    $route (to){
+  watch: {
+    $route (to, from){
       const { floor_number } = to.params;
-      this.currFloor = floor_number;
+      const { floor_number: old_floor } = from.params;
+      if (floor_number !== old_floor) {
+        this.getGalleries(floor_number);
+      }
     }
   },
   methods: {
-    async getGalleries() {
+    async getGalleries(floor_number) {
       try {
-        const currFloorUrl = apiUrls.galleriesByFloor(this.currFloor);
+        const currFloorUrl = apiUrls.galleriesByFloor(floor_number);
         const data = await getAnything(currFloorUrl);
         this.galleries = data.records;
       } catch(error) {
