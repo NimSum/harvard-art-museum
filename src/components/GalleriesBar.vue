@@ -1,6 +1,7 @@
 <template>
   <aside>
     <nav>
+      <h2>Galleries : Floor {{ floor }}</h2>
       <ul>
         <li v-for="gallery in galleries" v-bind:key="gallery.galleryid">
           {{ gallery.theme || gallery.name }}
@@ -13,15 +14,20 @@
 <script>
 export default {
   name: 'GalleriesBar',
-  props: ['galleries']
+  props: ['galleries', 'floor']
 }
 </script>
 
 <style lang="scss" scoped>
     aside {
-      width: 25%;
+      width: 22%;
       background-color: #E3FDFD;
       height: 100%;
+
+      h2 {
+        margin: 0;
+        padding: 15px 0;
+      }
 
       ul {
         margin: 0;
@@ -32,7 +38,6 @@ export default {
           text-align: left;
           padding: 10px;
           margin: 0;
-          font-size: 1.2rem;
           font-weight: bolder;
 
           &:hover {

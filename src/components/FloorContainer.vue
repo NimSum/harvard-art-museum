@@ -1,6 +1,9 @@
 <template>
   <main>
-    <GalleriesBar v-bind:galleries="galleries" />
+    <GalleriesBar 
+      v-bind:galleries="galleries" 
+      v-bind:floor="currFloor" 
+    />
   </main>
 </template>
 
