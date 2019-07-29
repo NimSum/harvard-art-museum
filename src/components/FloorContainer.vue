@@ -1,6 +1,5 @@
 <template>
   <main>
-    <h2>Floor{{ this.currFloor }}</h2>
     <GalleriesBar v-bind:galleries="galleries" />
   </main>
 </template>
@@ -47,7 +46,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-  
+<style lang="scss" scoped>
+  main {
+    height: 100%;
+  }
 </style>
 

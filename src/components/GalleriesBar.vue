@@ -20,6 +20,8 @@ export default {
 <style lang="scss" scoped>
     aside {
       width: 25%;
+      background-color: #E3FDFD;
+      height: 100%;
 
       ul {
         margin: 0;
@@ -31,6 +33,13 @@ export default {
           padding: 10px;
           margin: 0;
           font-size: 1.2rem;
+          font-weight: bolder;
+
+          &:hover {
+            background-color: #FF2E63;
+            color: #E3FDFD;
+            cursor: pointer;
+          }
         }
       }
     }
