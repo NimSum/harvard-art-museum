@@ -64,9 +64,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   main {
     height: 100%;
+    display: flex;
   }
 </style>
 
