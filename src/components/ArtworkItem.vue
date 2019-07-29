@@ -1,11 +1,11 @@
 <template>
   <article class="ArtworkItem">
     <div class="image-container">
-      <img v-bind:src="this.data.primaryimageurl" alt="">
+      <img v-bind:src="primaryimageurl" alt="">
+      <h4>{{ title }}</h4>
     </div>
     <div class="details-container">
-      <h4>{{ this.data.title }}</h4>
-      <p>{{ this.data.labeltext }}</p>
+      <p>{{ labeltext }}</p>
     </div>
   </article>
 </template>
@@ -15,21 +15,8 @@ export default {
   name: 'ArtworkItem',
   props: ['artwork'],
   data() {
-    return {
-      people: {},
-      colors: [],
-      dated: '',
-      primaryimageurl: '',
-      labeltext: '',
-      url: '',
-      title: '',
-      medium: '',
-      culture: ''
-    }
-  },
-  created() {
     const { people, colors, dated, labeltext, primaryimageurl, url, title, medium, culture } = this.$props.artwork;
-    this.data = {
+    return {
       people,
       colors,
       dated,
