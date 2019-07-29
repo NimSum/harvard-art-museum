@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       galleries: [],
+      galleryObjects: [],
       currFloor: this.$route.params.floor_number
     }
   },
@@ -45,9 +46,13 @@ export default {
         throw error;
       }
     },
-    async getArtObjects() {
+    async getArtObjects(galleryId) {
       try {
+        const currGalleryUrl = apiUrls.getGalleryObjects(galleryId);
+        const data = await getAnything(currGalleryUrl);
+        this.galleryObjects = data.records;
       } catch(error) {
+        throw error;
       }
     }
   }

@@ -54,7 +54,8 @@ export default {
     display: flex;
     flex-direction: column;
     font-family: 'Rufina', serif;
-    margin: 0 10px;
+    font-size: 1.5rem;
+    margin: 5px 10px;
   }
 
   ul {
@@ -63,7 +64,7 @@ export default {
 
     li {
       list-style-type: none;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-family: 'Scada', sans-serif;
       
       span {
