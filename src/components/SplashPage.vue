@@ -44,11 +44,13 @@ export default {
     img {
       display: inline-block;
       width: 27%;
-      margin: 2%;
+      margin: 4% 2%;
       transition: all 500ms ease-in-out;
+      border: 4px solid #eaeaea;
 
       &:hover {
         width: 33%;
+        border-color: #252a34;
       }
     }
     
