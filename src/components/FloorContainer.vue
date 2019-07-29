@@ -4,18 +4,23 @@
       v-bind:galleries="galleries"
       v-on:get-art="getArtObjects"
     />
+    <ArtworkContainer 
+      v-bind:artworks="galleryObjects"
+    />
   </main>
 </template>
 
 <script>
 import GalleriesBar from './GalleriesBar';
+import ArtworkContainer from './ArtworkContainer';
 import getAnything from '../utils/apiFetches';
 import apiUrls from '../utils/apiUrlGenerator';
 
 export default {
   name: 'FloorContainer',
   components: {
-    GalleriesBar
+    GalleriesBar,
+    ArtworkContainer
   },
   data() {
     return {

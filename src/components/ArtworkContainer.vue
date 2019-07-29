@@ -6,10 +6,12 @@
 
 <script>
 export default {
-  name: 'ArtworkContainer'
+  name: 'ArtworkContainer',
+  props: ['artworks']
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
+
