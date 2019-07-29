@@ -1,9 +1,9 @@
 import FloorContainer from '../components/FloorContainer.vue';
-import ArtworkContainer from '../components/ArtworkContainer.vue';
+import SplashPage from '../components/SplashPage.vue';
 
 const routes = [
   { path: '/floor/:floor_number', component: FloorContainer },
-  { path: '/', component: ArtworkContainer },
+  { path: '/', component: SplashPage },
 ];
 
 export default routes;
