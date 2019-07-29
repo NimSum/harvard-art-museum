@@ -33,19 +33,29 @@ export default {
 
 <style lang="scss" scoped>
   .ArtworkItem {
-    width: 50%;
+    width: 85%;
+    margin: auto;
     display: flex;
+    flex-direction: column;
 
-    div.image-container {
-      flex: 1;
-      
+    div.image-container {  
+      background-color: #EAEAEA;
+
       img {
-        width: 50%;
+        width: 100%;
+        max-height: 90vh;
+      }
+
+      h4 {
+        margin: 0;
+        padding: 10px 0;
+        color: #252A34;
+        font-size: 1.3rem;
+        font-weight: 400;
       }
     }
 
     div.details-container {
-      flex: 1;
     }
   }
 </style>
