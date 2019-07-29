@@ -1,7 +1,8 @@
 <template>
   <main>
     <GalleriesBar 
-      v-bind:galleries="galleries" 
+      v-bind:galleries="galleries"
+      v-on:get-art="getArtObjects"
     />
   </main>
 </template>
@@ -42,6 +43,11 @@ export default {
         this.galleries = data.records;
       } catch(error) {
         throw error;
+      }
+    },
+    async getArtObjects() {
+      try {
+      } catch(error) {
       }
     }
   }
