@@ -68,7 +68,6 @@ export default {
     generateInitialGallery() {
       const randomGalleryId = Math.floor(Math.random() * (this.galleries.length - 1 - 0 + 1)) + 0;
       const selectedGallery = this.galleries[randomGalleryId].galleryid;
-      console.log(selectedGallery)
       this.getArtObjects(selectedGallery);
     }
   }
