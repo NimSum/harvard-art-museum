@@ -1,6 +1,7 @@
 <template>
   <main>
     <h2>Floor{{ this.currFloor }}</h2>
+    <GalleriesBar v-bind:galleries="galleries" />
   </main>
 </template>
 
@@ -27,20 +28,19 @@ export default {
     this.getGalleries();
   },
   watch:{
-    $route (to, from){
+    $route (to){
       const { floor_number } = to.params;
       this.currFloor = floor_number;
     }
   },
   methods: {
     async getGalleries() {
-      console.log('hi')
       try {
         const currFloorUrl = apiUrls.galleriesByFloor(this.currFloor);
         const data = await getAnything(currFloorUrl);
         this.galleries = data.records;
       } catch(error) {
-        console.log(error); 
+        throw error;
       }
     }
   }
