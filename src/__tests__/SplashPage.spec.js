@@ -8,8 +8,33 @@ jest.mock('../utils/apiFetches')
 getAnything.mockImplementation(() => Promise.resolve(mockImages));
 
 describe('SplashPage', () => {
+  let wrapper;
+  const destroySpy = jest.fn();
+
+  beforeEach(() => {
+    wrapper = mount(SplashPage, {
+      beforeDestroy() {
+        destroySpy()
+      }
+    });
+    jest.spyOn(wrapper.vm, 'addImages');
+  });
+
   test('renders correctly', () => {
-    const wrapper = mount(SplashPage);
     expect(wrapper.element).toMatchSnapshot();
+  });
+
+  test('adds additional images from event', () => {
+    const mockNewImage = {
+      records: [
+        {
+          "id": 12345,
+          "baseimageurl": "https://nrs.harvard.edu/urn-3:HUAM:INV028582_dynmc",
+        }
+      ]
+    }
+    getAnything.mockImplementation(() => Promise.resolve(mockNewImage));
+    wrapper.vm.checkIfBottom();
+    expect(wrapper.vm.addImages).toHaveBeenCalled();
   })
 });

@@ -3,5 +3,86 @@
 exports[`SplashPage renders correctly 1`] = `
 <section
   class="SplashPage"
-/>
+>
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV028582_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV221494P_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV152006_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV185725_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:OCP19223_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV120600_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV115030_lgdl"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV165681_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:huam:INV19971503_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:VRS13982_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:21050_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:LEG3634_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV152372_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:71269_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV126374_lgdl"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV176191_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:INV139197_lgdl"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:COIN11049_dlvr"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:DDC108076_dynmc"
+  />
+  <img
+    alt="Random Art Photo"
+    src="https://nrs.harvard.edu/urn-3:HUAM:COIN00774_dynmc"
+  />
+</section>
 `;

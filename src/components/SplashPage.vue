@@ -35,7 +35,7 @@ export default {
         id: record.imageid
       }));
       this.$data.images = [...this.$data.images, ...images];
-      if (result.info.next) this.$data.isFetching = false;
+      if (result.records) this.$data.isFetching = false;
     },
     checkIfBottom() {
       if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
