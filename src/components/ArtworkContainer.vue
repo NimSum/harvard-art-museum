@@ -23,6 +23,7 @@ export default {
 <style lang="scss" scoped>
   .ArtworkContainer {
     width: 80%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     overflow: scroll;

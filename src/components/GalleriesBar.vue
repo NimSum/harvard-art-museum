@@ -48,7 +48,7 @@ export default {
     aside {
       width: 22%;
       background-color: #E3FDFD;
-      height: 100%;
+      height: 100vh;
       overflow: scroll;  
       h2 {
         margin: 0;
