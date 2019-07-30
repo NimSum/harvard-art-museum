@@ -18,8 +18,11 @@ export default {
     }
   },
   created() {
-    this.listenToBottom();
+    window.addEventListener('scroll', this.checkIfBottom, false);
     this.addImages();
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.checkIfBottom, false);
   },
   methods: {
     async addImages() {
@@ -34,14 +37,12 @@ export default {
       this.$data.images = [...this.$data.images, ...images];
       if (result.info.next) this.$data.isFetching = false;
     },
-    listenToBottom() {
-      window.onscroll = () => {
-        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
-          if (!this.$data.isFetching) {
-            this.addImages();
-          }
+    checkIfBottom() {
+      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
+        if (!this.$data.isFetching) {
+          this.addImages();
         }
-      };
+      }
     }
   }
 }
