@@ -8,7 +8,672 @@ exports[`FloorContainer renders correctly 1`] = `
         Galleries : Floor 2
       </h2>
        
-      <ul />
+      <ul>
+        <li
+          class=""
+        >
+          
+        Collection of Maurice Wertheim, Class of 1906
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art in Germany Between the Wars
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Mid–century Abstraction I
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Early Modernism
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art In Germany Between the Wars
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Mid–century Abstraction II
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Calderwood Courtyard
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        New Images
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art in Germany Between the Wars
+      
+        </li>
+      </ul>
+    </nav>
+  </aside>
+   
+  <section
+    class="ArtworkContainer"
+  />
+</main>
+`;
+
+exports[`FloorContainer renders with artObjects 1`] = `
+<main>
+  <aside>
+    <nav>
+      <h2>
+        Galleries : Floor 2
+      </h2>
+       
+      <ul>
+        <li
+          class=""
+        >
+          
+        Collection of Maurice Wertheim, Class of 1906
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art in Germany Between the Wars
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Mid–century Abstraction I
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Early Modernism
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art In Germany Between the Wars
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Mid–century Abstraction II
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Calderwood Courtyard
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        New Images
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art in Germany Between the Wars
+      
+        </li>
+      </ul>
+    </nav>
+  </aside>
+   
+  <section
+    class="ArtworkContainer"
+  >
+    <article
+      class="ArtworkItem"
+    >
+      <div
+        class="image-container"
+      >
+        <img
+          alt=""
+          src="https://nrs.harvard.edu/urn-3:HUAM:DDC251912_dynmc"
+        />
+         
+        <h4>
+          Gabrielle in a Red Dress
+        </h4>
+         
+        <button
+          type="button"
+        >
+          More Details
+        </button>
+      </div>
+       
+      <div
+        class="details-container"
+        style="display: none;"
+      >
+        <table>
+          <tr>
+            <td>
+              Dated:
+            </td>
+             
+            <td>
+              1908
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Medium: 
+            </td>
+             
+            <td>
+              Oil on canvas
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Culture: 
+            </td>
+             
+            <td>
+              French
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Artist/Artists: 
+            </td>
+             
+            <td>
+              Pierre-Auguste Renoir
+            </td>
+          </tr>
+        </table>
+         
+        <a
+          href="https://www.harvardartmuseums.org/collections/object/229048"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          
+      Harvard Museum Details
+    
+        </a>
+      </div>
+       
+      <div
+        class="details-container"
+      >
+        <p>
+          Renoir painted Gabrielle Renard (1879–1959) more than two hundred times. In several of the portraits, she wears the same informal, square-necked gown seen here. By 1908, she had been employed in Renoir’s household for fourteen years, as a nanny, housekeeper, model, and companion to the aging artist.
+This painting’s gold and brownish-red palette, loose brushwork, and stylized, heavy forms typify Renoir’s late work; he adopted the style in response to the ancient murals of Pompeii and Herculaneum, which he had seen in Naples. His direct engagement with the classical past was greatly admired, and was seen as a modern project by many young avant-garde artists, including Picasso and Matisse. The latter visited Renoir frequently in his final years, and praised him in the highest terms: “I have always felt that recorded time holds no nobler story, no more heroic, no more magnificent achievement than that of Renoir.”
+        </p>
+      </div>
+    </article>
+    <article
+      class="ArtworkItem"
+    >
+      <div
+        class="image-container"
+      >
+        <img
+          alt=""
+          src="https://nrs.harvard.edu/urn-3:HUAM:DDC251942_dynmc"
+        />
+         
+        <h4>
+          Self-Portrait Dedicated to Paul Gauguin
+        </h4>
+         
+        <button
+          type="button"
+        >
+          More Details
+        </button>
+      </div>
+       
+      <div
+        class="details-container"
+        style="display: none;"
+      >
+        <table>
+          <tr>
+            <td>
+              Dated:
+            </td>
+             
+            <td>
+              1888
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Medium: 
+            </td>
+             
+            <td>
+              Oil on canvas
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Culture: 
+            </td>
+             
+            <td>
+              Dutch
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Artist/Artists: 
+            </td>
+             
+            <td>
+              Vincent van Gogh
+            </td>
+          </tr>
+        </table>
+         
+        <a
+          href="https://www.harvardartmuseums.org/collections/object/299843"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          
+      Harvard Museum Details
+    
+        </a>
+      </div>
+       
+      <div
+        class="details-container"
+      >
+        <p>
+          In early 1888, Van Gogh moved to Arles in the south of France, where he hoped to establish an art colony. Believing that painting could be reinvented through the genre of portraiture, he encouraged his fellow artists to paint themselves, and then to exchange the canvases. After receiving self-portraits from Emile Bernard and Gauguin, who were working together in Brittany at the time, Van Gogh inscribed this painting “To my friend Paul Gauguin,” and sent it to him. He described the process of creating his arresting likeness in several letters to his brother Theo, an art dealer in Paris, explaining how he manipulated his features in response to Japanese prints, changed the contours of his jacket for coloristic effect, and painted the background “pale veronese green” without any shadows. Shortly after he sent the work to Gauguin, however, their friendship deteriorated, and Gauguin sold it for three hundred francs.
+        </p>
+      </div>
+    </article>
+    <article
+      class="ArtworkItem"
+    >
+      <div
+        class="image-container"
+      >
+        <img
+          alt=""
+          src="https://nrs.harvard.edu/urn-3:HUAM:DDC231456_dynmc"
+        />
+         
+        <h4>
+          The Gare Saint-Lazare: Arrival of a Train
+        </h4>
+         
+        <button
+          type="button"
+        >
+          More Details
+        </button>
+      </div>
+       
+      <div
+        class="details-container"
+        style="display: none;"
+      >
+        <table>
+          <tr>
+            <td>
+              Dated:
+            </td>
+             
+            <td>
+              1877
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Medium: 
+            </td>
+             
+            <td>
+              Oil on canvas
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Culture: 
+            </td>
+             
+            <td>
+              French
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Artist/Artists: 
+            </td>
+             
+            <td>
+              Claude Monet
+            </td>
+          </tr>
+        </table>
+         
+        <a
+          href="https://www.harvardartmuseums.org/collections/object/228649"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          
+      Harvard Museum Details
+    
+        </a>
+      </div>
+       
+      <div
+        class="details-container"
+      >
+        <p>
+          This is the largest in Monet’s series of twelve paintings of the Saint-Lazare train station in Paris, a subject favored by many impressionist painters. While completing the series, Monet relocated from the town of Argenteuil to an apartment near the station in Paris. He worked on all the paintings at the same time, and sometimes he leaned the stretched canvases against each other while the paint was still wet. This caused the cork spacers on the backs of the stretchers to be pressed into the adjacent paintings, creating circular indentations in the surface that are visible along the top edge of this work. Monet’s thick build-up of pigments here is a virtuosic example of his approach to painting during this period, when he juxtaposed multitudinous hues in mounds of impasto that would blend into a coherent whole only when viewed from a distance. This technique reportedly led Cézanne to declare, “Monet is only an eye, but my God what an eye!”
+        </p>
+      </div>
+    </article>
+    <article
+      class="ArtworkItem"
+    >
+      <div
+        class="image-container"
+      >
+        <img
+          alt=""
+          src="https://nrs.harvard.edu/urn-3:HUAM:DDC252306_dynmc"
+        />
+         
+        <h4>
+          Grande Arabesque, Third Time
+        </h4>
+         
+        <button
+          type="button"
+        >
+          More Details
+        </button>
+      </div>
+       
+      <div
+        class="details-container"
+        style="display: none;"
+      >
+        <table>
+          <tr>
+            <td>
+              Dated:
+            </td>
+             
+            <td>
+              c. 1885-1890
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Medium: 
+            </td>
+             
+            <td>
+              Bronze
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Culture: 
+            </td>
+             
+            <td>
+              French
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Artist/Artists: 
+            </td>
+             
+            <td>
+              Hilaire-Germain-Edgar Degas
+            </td>
+          </tr>
+        </table>
+         
+        <a
+          href="https://www.harvardartmuseums.org/collections/object/228475"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          
+      Harvard Museum Details
+    
+        </a>
+      </div>
+       
+      <div
+        class="details-container"
+      >
+        <p>
+          The arabesque is an essential position in classical ballet and features frequently and in many media — particularly sculpture and pastel — in Degas’s work. This bronze is an example of the artist’s probing attempt to depict the pose, in which all parts of the dancer’s body are fully extended. It captures a sequence of movement, revealing, as his equestrian bronzes also do, Degas’s fascination with the stop-action photography of Eadweard Muybridge. Unlike the photographs, however, Degas’s three-dimensional figures explore the full spatial and physical complexity of motion.
+        </p>
+      </div>
+    </article>
+    <article
+      class="ArtworkItem"
+    >
+      <div
+        class="image-container"
+      >
+        <img
+          alt=""
+          src="https://nrs.harvard.edu/urn-3:HUAM:DDC252083_dynmc"
+        />
+         
+        <h4>
+          Skating
+        </h4>
+         
+        <button
+          type="button"
+        >
+          More Details
+        </button>
+      </div>
+       
+      <div
+        class="details-container"
+        style="display: none;"
+      >
+        <table>
+          <tr>
+            <td>
+              Dated:
+            </td>
+             
+            <td>
+              1877
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Medium: 
+            </td>
+             
+            <td>
+              Oil on canvas
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Culture: 
+            </td>
+             
+            <td>
+              French
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              Artist/Artists: 
+            </td>
+             
+            <td>
+              Edouard Manet
+            </td>
+          </tr>
+        </table>
+         
+        <a
+          href="https://www.harvardartmuseums.org/collections/object/299842"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          
+      Harvard Museum Details
+    
+        </a>
+      </div>
+       
+      <div
+        class="details-container"
+      >
+        <p>
+          Although he never exhibited with the impressionists, Manet had a formative influence on the group. He shared their commitment to depicting modern pastimes, as in this scene of a popular roller skating rink. The sport had exploded as a fashionable French pursuit in the 1870s, with five lavish rinks opening in Paris over a two-year period. The main figure here wears a chic outfit, which is displayed at its most alluring angle, accentuating its wearer’s curves. The dress contrasts starkly with the more typical all-black day dresses of the women in the middle ground. As he worked on this composition, Manet made the young child in the foreground increasingly indistinct, focusing the viewer’s attention almost exclusively on her stylish and attractive mother. The model for this figure, Henriette Hauser, was the mistress of the Prince of Orange and an aspiring actress. Manet painted her several times.
+        </p>
+      </div>
+    </article>
+  </section>
+</main>
+`;
+
+exports[`FloorContainer renders with galleries 1`] = `
+<main>
+  <aside>
+    <nav>
+      <h2>
+        Galleries : Floor 2
+      </h2>
+       
+      <ul>
+        <li
+          class=""
+        >
+          
+        Collection of Maurice Wertheim, Class of 1906
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art in Germany Between the Wars
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Mid–century Abstraction I
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Early Modernism
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art In Germany Between the Wars
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Mid–century Abstraction II
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Calderwood Courtyard
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        New Images
+      
+        </li>
+        <li
+          class=""
+        >
+          
+        Art in Germany Between the Wars
+      
+        </li>
+      </ul>
     </nav>
   </aside>
    
