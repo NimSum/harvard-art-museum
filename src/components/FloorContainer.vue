@@ -50,7 +50,8 @@ export default {
       try {
         const currFloorUrl = apiUrls.galleriesByFloor(floor_number);
         const data = await getAnything(currFloorUrl);
-        this.galleries = data.records;
+        const cleaned = this.filterWithObjects(data.records);
+        this.$data.galleries = cleaned;
         return true;
       } catch(error) {
         throw error;
@@ -61,7 +62,7 @@ export default {
         const currGalleryUrl = apiUrls.getGalleryObjects(galleryId);
         const data = await getAnything(currGalleryUrl);
         const cleaned = this.filterWithImages(data.records);
-        this.galleryObjects = cleaned;
+        this.$data.galleryObjects = cleaned;
       } catch(error) {
         throw error;
       }
@@ -73,6 +74,9 @@ export default {
     },
     filterWithImages(items) {
       return items.filter(item => item.imagecount > 0 && item.primaryimageurl !== null);
+    },
+    filterWithObjects(galleries) {
+      return galleries.filter(gallery => gallery.objectcount > 0);
     }
   }
 }

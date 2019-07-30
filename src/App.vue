@@ -19,9 +19,6 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Rufina:700|Scada&display=swap');
 
-/* font-family: 'Rufina', serif;
-font-family: 'Scada', sans-serif; */
-
 * {
   box-sizing: border-box;
 }

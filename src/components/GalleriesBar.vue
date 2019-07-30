@@ -76,7 +76,7 @@ export default {
 
         .hasVisited {
           background-color: #CBF1F5;
-          color: #08D9D6;
+          color: #71C9CE;
         }
 
         .active {
