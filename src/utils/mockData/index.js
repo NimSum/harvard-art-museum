@@ -4,7 +4,7 @@ export const pg1Floor1 = {
       "totalrecords": 22,
       "pages": 3,
       "page": 1,
-      "next": "https://api.harvardartmuseums.org/gallery?floor=1&apikey=c71613c0-b017-11e9-bfe7-79a754f615ac&sort=random&page=2"
+      "next": ""
   },
   "records": [
       {
@@ -136,7 +136,7 @@ export const gallery1220 = {
       "totalrecords": 32,
       "pages": 4,
       "page": 1,
-      "next": "https://api.harvardartmuseums.org/object?apikey=c71613c0-b017-11e9-bfe7-79a754f615ac&hasimage=1&sort=random&gallery=1220&page=2"
+      "next": ""
   },
   "records": [
       {
