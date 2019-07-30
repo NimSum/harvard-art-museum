@@ -62,13 +62,15 @@ export default {
     img {
       display: inline-block;
       width: 27%;
-      margin: 4% 2%;
+      margin: 6% 2%;
       transition: all 500ms ease-in-out;
       border: 4px solid #eaeaea;
 
       &:hover {
-        width: 33%;
-        border-color: #252a34;
+        transform: scale(1.3);
+        border-width: 8px;
+        z-index: 2;
+        box-shadow: 0px 0px 100px 50px hsla(0, 0%, 0%, .5);
       }
     }
   }
