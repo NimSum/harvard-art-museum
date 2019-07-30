@@ -1,5 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`GalleriesBar handles gallery item click 1`] = `
+<aside>
+  <nav>
+    <h2>
+      Galleries : Floor 1
+    </h2>
+     
+    <ul>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+    </ul>
+  </nav>
+</aside>
+`;
+
 exports[`GalleriesBar renders correctly 1`] = `
 <aside>
   <nav>
@@ -7,7 +90,161 @@ exports[`GalleriesBar renders correctly 1`] = `
       Galleries : Floor 1
     </h2>
      
-    <ul />
+    <ul>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+      <li
+        class=""
+      >
+        
+        
+      
+      </li>
+    </ul>
+  </nav>
+</aside>
+`;
+
+exports[`GalleriesBar sets class to active on click 1`] = `
+<aside>
+  <nav>
+    <h2>
+      Galleries : Floor 1
+    </h2>
+     
+    <ul>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+      <li
+        class="hasVisited active"
+      >
+        
+        
+      
+      </li>
+    </ul>
   </nav>
 </aside>
 `;
