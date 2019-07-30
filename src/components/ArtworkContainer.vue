@@ -27,6 +27,7 @@ export default {
     flex-wrap: wrap;
     overflow: scroll;
     padding: 1%;
+    background-color: #E3FDFD;
   }
 
 </style>

@@ -37,7 +37,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 1% 0;
-    background: #08d9d6;
+    background: #E3FDFD;
     height: 100%;
     overflow: scroll;
 

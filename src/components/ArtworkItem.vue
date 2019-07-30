@@ -91,6 +91,8 @@ export default {
         color: #252A34;
         font-size: 1.3rem;
         font-weight: 400;
+        width: 80%;
+        margin: auto;
       }
 
       button {

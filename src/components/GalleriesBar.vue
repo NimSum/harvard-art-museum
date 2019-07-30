@@ -6,7 +6,8 @@
         <li 
           v-for="gallery in galleries" 
           v-bind:key="gallery.galleryid"
-          @click="$emit('get-art', gallery.galleryid)"
+          v-bind:class="{ hasVisited : visited.includes(gallery.galleryid), active : activeGallery === gallery.galleryid }"
+          @click="handleClick(gallery.galleryid)"
         >
           {{ gallery.theme || gallery.name }}
         </li>
@@ -18,7 +19,28 @@
 <script>
 export default {
   name: 'GalleriesBar',
-  props: ['galleries']
+  props: ['galleries'],
+  data() {
+    return {
+      visited: [],
+      activeGallery: 0
+    }
+  },
+  methods: {
+    setVisited(galleryid) {
+      this.$data.visited.push(galleryid);
+      this.calculateLast();
+    },
+    handleClick(galleryid) {
+      this.$emit('get-art', galleryid);
+      this.setVisited(galleryid);
+    },
+    calculateLast() {
+      const { visited } = this.$data;
+      const lastVal = visited[visited.length - 1];
+      this.$data.activeGallery = lastVal;
+    }
+  }
 }
 </script>
 
@@ -50,6 +72,16 @@ export default {
             color: #E3FDFD;
             cursor: pointer;
           }
+        }
+
+        .hasVisited {
+          background-color: #CBF1F5;
+          color: #08D9D6;
+        }
+
+        .active {
+          background-color: #FF2E63;
+          color: #E3FDFD;
         }
       }
     }
