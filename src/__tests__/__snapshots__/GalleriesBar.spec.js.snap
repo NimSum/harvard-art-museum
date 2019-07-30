@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleriesBar renders correctly 1`] = `
+<aside>
+  <nav>
+    <h2>
+      Galleries : Floor 1
+    </h2>
+     
+    <ul />
+  </nav>
+</aside>
+`;
