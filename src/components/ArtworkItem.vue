@@ -9,22 +9,22 @@
       <table>
         <tr>
           <td>Dated:</td>
-          <td>{{ dated }}</td>
+          <td>{{ dated || 'Unknown' }}</td>
         </tr>
         <tr>
           <td>Medium: </td>
-          <td>{{ medium }}</td>
+          <td>{{ medium || 'Unknown' }}</td>
         </tr>
         <tr>
           <td>Culture: </td>
-          <td>{{ culture }}</td>
+          <td>{{ culture || 'Unknown' }}</td>
         </tr>
         <tr>
           <td>Artist/Artists: </td>
           <td 
             v-for="artist in people"
             v-bind:key="artist.id"
-            >{{ artist.name }}</td>
+            >{{ artist.name || 'Unknown' }}</td>
         </tr>
       </table>
       <a 
@@ -112,6 +112,27 @@ export default {
       p {
         text-align: left;
         text-indent: 45px;
+      }
+
+      table {
+        width: 50%;
+        padding: 15px;
+
+        td {
+          text-align: left;
+          padding: 5px;
+        }
+        
+        td:nth-child(2) {
+          font-weight: bold;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        text-align: left;
+        display: block;
+        padding: 0 20px;
       }
     }
   }
