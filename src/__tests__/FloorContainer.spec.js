@@ -20,6 +20,8 @@ describe('FloorContainer', () => {
         $route
       }
     });
+    jest.spyOn(wrapper.vm, 'filterWithImages');
+    jest.spyOn(wrapper.vm, 'filterWithObjects')
   })
 
   test('renders correctly', () => {
@@ -28,7 +30,7 @@ describe('FloorContainer', () => {
 
   test('generates initial gallery by invoking getArtObjects', async () => {
     jest.spyOn(wrapper.vm, 'getArtObjects');
-    wrapper.vm.generateInitialGallery();
+    await wrapper.vm.generateInitialGallery();
     expect(wrapper.vm.getArtObjects).toHaveBeenCalled();
   })
 
@@ -36,7 +38,7 @@ describe('FloorContainer', () => {
     getAnything.mockImplementation(() => Promise.resolve(gallery1220));
     await wrapper.vm.getArtObjects(1220);
     expect(wrapper.element).toMatchSnapshot();
+    expect(wrapper.vm.filterWithImages).toHaveBeenCalled();
   })
-  
   
 });

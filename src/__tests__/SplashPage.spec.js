@@ -12,16 +12,13 @@ describe('SplashPage', () => {
   const destroySpy = jest.fn();
 
   beforeEach(() => {
-    wrapper = mount(SplashPage, {
-      beforeDestroy() {
-        destroySpy()
-      }
-    });
+    wrapper = mount(SplashPage);
     jest.spyOn(wrapper.vm, 'addImages');
   });
 
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
+    wrapper.destroy();
   });
 
   test('adds additional images from event', () => {
