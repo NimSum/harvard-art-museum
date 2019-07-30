@@ -1,9 +1,11 @@
-import { mount } from '@vue/test-utils';
-import ArtworkContainer from '../components/ArtworkContainer.vue';
+import { mount, RouterLinkStub } from '@vue/test-utils';
+import App from '../App.vue';
 
-describe('ArtworkContainer', () => {
+describe('App', () => {
   test('renders correctly', () => {
-    const wrapper = mount(ArtworkContainer);
+    const wrapper = mount(App, {
+      stubs: ['router-link', 'router-view']
+    });
     expect(wrapper.element).toMatchSnapshot();
   })
 });
