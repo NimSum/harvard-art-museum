@@ -3,6 +3,10 @@
     <div class="image-container">
       <img v-bind:src="primaryimageurl" alt="">
       <h4>{{ title }}</h4>
+      <button @click="this.showMoreInfo" type="button">More Details</button>
+    </div>
+    <div v-show="showDetails" class="details-container">
+      <p>hihihi</p>
     </div>
     <div class="details-container">
       <p>{{ labeltext }}</p>
@@ -25,7 +29,13 @@ export default {
       url,
       title,
       medium,
-      culture
+      culture,
+      showDetails: false
+    }
+  },
+  methods: {
+    showMoreInfo() {
+      this.showDetails = !this.showDetails;
     }
   }
 }
@@ -35,6 +45,7 @@ export default {
   .ArtworkItem {
     width: 85%;
     margin: auto;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
 
@@ -44,6 +55,7 @@ export default {
       img {
         width: 100%;
         max-height: 90vh;
+        object-fit: scale-down;
       }
 
       h4 {
@@ -56,6 +68,10 @@ export default {
     }
 
     div.details-container {
+      p {
+        text-align: left;
+        text-indent: 45px;
+      }
     }
   }
 </style>
