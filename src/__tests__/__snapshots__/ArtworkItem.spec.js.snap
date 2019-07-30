@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtworkItem renders correctly 1`] = `
+<article
+  class="ArtworkItem"
+>
+  <div
+    class="image-container"
+  >
+    <img
+      alt=""
+      src="https://nrs.harvard.edu/urn-3:HUAM:DDC251912_dynmc"
+    />
+     
+    <h4>
+      Gabrielle in a Red Dress
+    </h4>
+     
+    <button
+      type="button"
+    >
+      More Details
+    </button>
+  </div>
+   
+  <div
+    class="details-container"
+    style="display: none;"
+  >
+    <table>
+      <tr>
+        <td>
+          Dated:
+        </td>
+         
+        <td>
+          1908
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          Medium: 
+        </td>
+         
+        <td>
+          Oil on canvas
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          Culture: 
+        </td>
+         
+        <td>
+          French
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          Artist/Artists: 
+        </td>
+         
+        <td>
+          Pierre-Auguste Renoir
+        </td>
+      </tr>
+    </table>
+     
+    <a
+      href="https://www.harvardartmuseums.org/collections/object/229048"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      
+      Harvard Museum Details
+    
+    </a>
+  </div>
+   
+  <div
+    class="details-container"
+  >
+    <p>
+      Renoir painted Gabrielle Renard (1879–1959) more than two hundred times. In several of the portraits, she wears the same informal, square-necked gown seen here. By 1908, she had been employed in Renoir’s household for fourteen years, as a nanny, housekeeper, model, and companion to the aging artist.
+This painting’s gold and brownish-red palette, loose brushwork, and stylized, heavy forms typify Renoir’s late work; he adopted the style in response to the ancient murals of Pompeii and Herculaneum, which he had seen in Naples. His direct engagement with the classical past was greatly admired, and was seen as a modern project by many young avant-garde artists, including Picasso and Matisse. The latter visited Renoir frequently in his final years, and praised him in the highest terms: “I have always felt that recorded time holds no nobler story, no more heroic, no more magnificent achievement than that of Renoir.”
+    </p>
+  </div>
+</article>
+`;
+
+exports[`ArtworkItem renders correctly when show details clicked 1`] = `
+<article
+  class="ArtworkItem"
+>
+  <div
+    class="image-container"
+  >
+    <img
+      alt=""
+      src="https://nrs.harvard.edu/urn-3:HUAM:DDC251912_dynmc"
+    />
+     
+    <h4>
+      Gabrielle in a Red Dress
+    </h4>
+     
+    <button
+      type="button"
+    >
+      More Details
+    </button>
+  </div>
+   
+  <div
+    class="details-container"
+    style=""
+  >
+    <table>
+      <tr>
+        <td>
+          Dated:
+        </td>
+         
+        <td>
+          1908
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          Medium: 
+        </td>
+         
+        <td>
+          Oil on canvas
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          Culture: 
+        </td>
+         
+        <td>
+          French
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          Artist/Artists: 
+        </td>
+         
+        <td>
+          Pierre-Auguste Renoir
+        </td>
+      </tr>
+    </table>
+     
+    <a
+      href="https://www.harvardartmuseums.org/collections/object/229048"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      
+      Harvard Museum Details
+    
+    </a>
+  </div>
+   
+  <div
+    class="details-container"
+    style="display: none;"
+  >
+    <p>
+      Renoir painted Gabrielle Renard (1879–1959) more than two hundred times. In several of the portraits, she wears the same informal, square-necked gown seen here. By 1908, she had been employed in Renoir’s household for fourteen years, as a nanny, housekeeper, model, and companion to the aging artist.
+This painting’s gold and brownish-red palette, loose brushwork, and stylized, heavy forms typify Renoir’s late work; he adopted the style in response to the ancient murals of Pompeii and Herculaneum, which he had seen in Naples. His direct engagement with the classical past was greatly admired, and was seen as a modern project by many young avant-garde artists, including Picasso and Matisse. The latter visited Renoir frequently in his final years, and praised him in the highest terms: “I have always felt that recorded time holds no nobler story, no more heroic, no more magnificent achievement than that of Renoir.”
+    </p>
+  </div>
+</article>
+`;

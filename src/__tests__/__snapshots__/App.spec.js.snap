@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  id="app"
+>
+  <header>
+    <router-link-stub
+      to="/"
+    >
+      <h1>
+        <span>
+          Harvard Art
+        </span>
+        Musem Explorer
+      </h1>
+    </router-link-stub>
+     
+    <ul>
+      <li>
+        <router-link-stub
+          to="/"
+        >
+          
+          Home
+      
+        </router-link-stub>
+      </li>
+       
+      <li>
+        <router-link-stub
+          to="/floor/1"
+        >
+          
+         Floor
+          <span>
+            1
+          </span>
+        </router-link-stub>
+      </li>
+       
+      <li>
+        <router-link-stub
+          to="/floor/2"
+        >
+          
+        Floor
+          <span>
+            2
+          </span>
+        </router-link-stub>
+      </li>
+       
+      <li>
+        <router-link-stub
+          to="/floor/3"
+        >
+          
+        Floor
+          <span>
+            3
+          </span>
+        </router-link-stub>
+      </li>
+       
+      <li>
+        <router-link-stub
+          to="/floor/4"
+        >
+          
+        Floor
+          <span>
+            4
+          </span>
+        </router-link-stub>
+      </li>
+    </ul>
+  </header>
+   
+  <router-view-stub />
+</div>
+`;
