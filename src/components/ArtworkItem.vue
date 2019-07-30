@@ -78,10 +78,11 @@ export default {
     div.image-container {  
       background-color: #EAEAEA;
       position: relative;
+      padding: 5px;
 
       img {
         width: 100%;
-        max-height: 90vh;
+        max-height: 85vh;
         object-fit: scale-down;
       }
 

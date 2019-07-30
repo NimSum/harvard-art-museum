@@ -13,19 +13,36 @@ export default {
   data() {
     return {
       images: [],
-      next: ''
+      next: '',
+      isFetching: false
     }
   },
-  async created() {
-    const randomGalleryId = Math.floor(Math.random() * (18100 - 1 + 1)) + 1;
-    const randomImagesUrl = apiUrls.randomImages(randomGalleryId);
-    const result = await getAnything(randomImagesUrl);
-    const images = result.records.map(record => ({
-      url: record.baseimageurl,
-      id: record.imageid
-    }));
-    this.$data.images = [...this.$data.images, ...images];
-    this.$data.next = result.info.next;
+  created() {
+    this.listenToBottom();
+    this.addImages();
+  },
+  methods: {
+    async addImages() {
+      this.$data.isFetching = true;
+      const randomGalleryId = Math.floor(Math.random() * (18100 - 1 + 1)) + 1;
+      const randomImagesUrl = apiUrls.randomImages(randomGalleryId);
+      const result = await getAnything(randomImagesUrl);
+      const images = result.records.map(record => ({
+        url: record.baseimageurl,
+        id: record.imageid
+      }));
+      this.$data.images = [...this.$data.images, ...images];
+      if (result.info.next) this.$data.isFetching = false;
+    },
+    listenToBottom() {
+      window.onscroll = () => {
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 2) {
+          if (!this.$data.isFetching) {
+            this.addImages();
+          }
+        }
+      };
+    }
   }
 }
 </script>
@@ -53,7 +70,6 @@ export default {
         border-color: #252a34;
       }
     }
-    
   }
 </style>
 
