@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header>
+  <a>
+    <h1>
+      <span>
+        Harvard Art
+      </span>
+      Musem Explorer
+    </h1>
+  </a>
+   
+  <ul>
+    <li>
+      <a>
+        
+          Home
+      
+      </a>
+    </li>
+     
+    <li>
+      <a>
+        
+         Floor
+        <span>
+          1
+        </span>
+      </a>
+    </li>
+     
+    <li>
+      <a>
+        
+        Floor
+        <span>
+          2
+        </span>
+      </a>
+    </li>
+     
+    <li>
+      <a>
+        
+        Floor
+        <span>
+          3
+        </span>
+      </a>
+    </li>
+     
+    <li>
+      <a>
+        
+        Floor
+        <span>
+          4
+        </span>
+      </a>
+    </li>
+  </ul>
+</header>
+`;
