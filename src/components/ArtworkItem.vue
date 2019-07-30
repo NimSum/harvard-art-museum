@@ -6,9 +6,35 @@
       <button @click="this.showMoreInfo" type="button">More Details</button>
     </div>
     <div v-show="showDetails" class="details-container">
-      <p>hihihi</p>
+      <table>
+        <tr>
+          <td>Dated:</td>
+          <td>{{ dated }}</td>
+        </tr>
+        <tr>
+          <td>Medium: </td>
+          <td>{{ medium }}</td>
+        </tr>
+        <tr>
+          <td>Culture: </td>
+          <td>{{ culture }}</td>
+        </tr>
+        <tr>
+          <td>Artist/Artists: </td>
+          <td 
+            v-for="artist in people"
+            v-bind:key="artist.id"
+            >{{ artist.name }}</td>
+        </tr>
+      </table>
+      <a 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        v-bind:href="url">
+        Harvard Museum Details
+      </a>
     </div>
-    <div class="details-container">
+    <div v-show="!showDetails" class="details-container">
       <p>{{ labeltext }}</p>
     </div>
   </article>
@@ -51,6 +77,7 @@ export default {
 
     div.image-container {  
       background-color: #EAEAEA;
+      position: relative;
 
       img {
         width: 100%;
@@ -64,6 +91,20 @@ export default {
         color: #252A34;
         font-size: 1.3rem;
         font-weight: 400;
+      }
+
+      button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border: none;
+        background-color: #EAEAEA;
+        padding: 5px 10px;
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 

@@ -54,8 +54,8 @@ export default {
     display: flex;
     flex-direction: column;
     font-family: 'Rufina', serif;
-    font-size: 1.5rem;
-    margin: 5px 10px;
+    font-size: 1.4rem;
+    margin: 3px 10px;
     color: #E3FDFD;
     text-decoration: none;
   }
