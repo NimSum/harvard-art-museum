@@ -7,8 +7,9 @@
   - The challenge for this project was to learn and build the app using Vue within 5 days. 
   
 ## Screenshots
-
+### Wireframe
 ![Wireframe](https://user-images.githubusercontent.com/22114952/62012725-213dbf80-b147-11e9-8517-f87f096ef9d3.png)
+### App
 ![Home Page](https://user-images.githubusercontent.com/22114952/62174623-dca55600-b2f7-11e9-8d25-e6c1b84aa6c0.png)
 ![Galleries](https://user-images.githubusercontent.com/22114952/62174622-dca55600-b2f7-11e9-8cca-000e8008e750.png)
 
