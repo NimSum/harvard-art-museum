@@ -4,7 +4,7 @@
 ###  [Deployed App](https://harvard-museum-explorer.herokuapp.com/)
   
 ### Challenge:
-  - The challenge for this project was to learn and build the app using Vue within 5 days. 
+  - The challenge for this project was to learn and build the app using the [Harvard Art Museum API](https://github.com/harvardartmuseums/api-docs) in **Vue.js** within 5 days. 
   
 ## Screenshots
 ### Wireframe
