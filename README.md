@@ -1,7 +1,7 @@
 # Harvard Art Museum Explorer
   An app that allows users to explore the galleries in the Harvard Art Museum! The home page also picks random images out of the tens of thousands of images that Harvard has stored over the years.
   
-###  [Deployed App](https://palette-pal-fe.herokuapp.com/)
+###  [Deployed App](https://harvard-museum-explorer.herokuapp.com/)
   
 ### Challenge:
   - The challenge for this project was to learn and build the app using Vue within 5 days. 
@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-#### You can view this application live on Heroku at: https://palette-pal-fe.herokuapp.com/ !
+#### You can view this application live on Heroku at: https://harvard-museum-explorer.herokuapp.com/!
 
 OR
 
